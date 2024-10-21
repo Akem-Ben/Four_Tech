@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#main-container {
+  padding: 0;
+  margin: 0;
+  background-color: green;
+}
+#top-section {
+  background: linear-gradient(
+    to top,
+    rgb(237, 73, 90) 0%,
+    rgb(237, 72, 87) 50%,
+    rgb(237, 72, 82) 100%
+  );
+}
