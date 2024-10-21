@@ -1,17 +1,108 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* System font stack */
 }
+
 #main-container {
   padding: 0;
   margin: 0;
-  background-color: green;
 }
-#top-section {
+
+#hero-section h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+  }
+
+#ad {
+    font-family: "Helvetica Neue";
+    font-weight: 500;
+}
+
+#hero-section {
   background: linear-gradient(
     to top,
     rgb(237, 73, 90) 0%,
     rgb(237, 72, 87) 50%,
     rgb(237, 72, 82) 100%
   );
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
 }
+
+#hero-section #ad-revenue-advert{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#ad-revenue-advert #grow-revenue{
+    margin-top: 20px;
+}
+
+#ticks {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+#demo {
+    margin-top: 20px;
+}
+
+#demo button {
+    background-color: rgb(42,39,51);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 600;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#demo button:hover {
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    background-color: rgb(237, 73, 90);
+}
+
+#hero-section #carousel-screen {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-section #carousel-screen #carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px;
+    padding: 10px;
+}
+
+.carousel-images img {
+    width: 80%;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
