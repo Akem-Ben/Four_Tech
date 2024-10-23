@@ -9,8 +9,7 @@ const allImages = [...imageFiles];
 allImages.forEach((file) => {
     const img = document.createElement("img");
     img.src = `${imagesFolder}${file}`;
-    img.width = 20;
-    img.height = 20;
+    /* object-fit: contain; */
     carouselImagesContainer.appendChild(img);
   });
   
