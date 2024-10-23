@@ -42,18 +42,70 @@
             <button>Setup a Demo</button>
         </div>
         <div id="carousel-screen">
-            <div class="carousel-images" id="carousel-images"></div>
+            <div><div class="carousel-images" id="carousel-images"></div></div>
         </div>
       </section>
 
       <section id="membership">
         <div id="membership-text">Membership & Accolades</div>
         <div id="accolades">
+            <div id="membership3">
             <img src="./images/membership/google.png" alt="Google Certificate" />
             <img src="./images/membership/iab.png" alt="Iab membership" />
             <img src="./images/membership/high-performer.png" alt="Hight-performer Award" />
-            <img src="./images/membership/financial-times.png" alt="Financial Times Award" />
+            </div>
+            <div id="membership1">
+            <img src="./images/membership/financial-times.png" alt="Financial Times Award" id="membership-alone"/>
+            </div>
         </div>
+      </section>
+
+      <hr id="horizontal-rule"/>
+
+      <section id="demo-form">
+        <div id="setup-header"><h1>Setup a Demo</h1></div>
+        <div id="free"><p>Free 30 Min Website Monetization Consulting Included</p></div>
+        <div id="demo-form-container">
+            <form id="demo-request-form">
+                <div class="form-inputs">
+                <label for="firstName" style="color: rgb(129, 129, 129)">First Name<span style="color: rgb(252, 75, 88)">*</span></label>
+                <input type="text" id="firstName" class="demo-input" required>
+            </div>
+            <div class="form-inputs">
+                <label for="email" style="color: rgb(129, 129, 129)">Work Email<span style="color: rgb(252, 75, 88)">*</span></label>
+                <input type="email" id="email" class="demo-input" required>
+            </div>
+            <div class="form-inputs">
+                <label for="phone" style="color: rgb(129, 129, 129)">Phone<span style="color: rgb(252, 75, 88)">*</span></label>
+                <input type="tel" id="phone" placeholder="+234" class="demo-input" required>
+            </div>
+            <div class="form-inputs">
+                <label for="website" style="color: rgb(129, 129, 129)">Website<span style="color: rgb(252, 75, 88)">*</span></label>
+                <input type="url" id="website" class="demo-input" required>
+            </div>
+            <div class="form-inputs">
+                <label for="revenue">Monthly Revenue (USD)<span style="color: rgb(252, 75, 88)">*</span></label>
+                <!-- <input type="number" id="revenue" class="demo-input" required> -->
+                 <div id="revenue-options">
+                 <select id="options">
+                    <option disabled selected>Select any option</option>
+                    <option value="1000">Less than 1,000 USD</option>
+                    <option value="2000">1,000 - 2,999 USD</option>
+                    <option value="10000">3,000 - 10,000 USD</option>
+                    <option value="40000">10,000 - 40,000 USD</option>
+                    <option value="40001+">More than 40,000 USD</option>
+                 </select>
+                </div>
+            </div>
+            <div id="demo-button">
+                <button type="submit" id="demo-btn">GET A FREE DEMO</button>
+            </div>
+            </form>
+        </div>
+      </section>
+
+      <section id="access-benefits">
+
       </section>
     </main>
 
